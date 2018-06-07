@@ -1,0 +1,11 @@
+<view class='save' bindtap='saveImageToPhotosAlbum'>分享到朋友圈</view>
+<view hidden='{{canvasHidden}}' class='alertShare'>
+  <canvas canvas-id='share' style=''></canvas>
+  <view class='tip'>图片已为您保存到了本地，快去 朋友圈分享吧</view>
+  <view class='close' bindtap='closeAlert'>知道了</view>
+</view>
+
+
+<!-- //这里的 canvas-id 后面要用的上。 
+    //style里的宽高要用上，不设置宽高画板会失效。
+    //canvasHidden是控制画板显示隐藏的参数，画板直接设置display none，会导致失效。 -->

@@ -1,0 +1,57 @@
+<!--pages/beat/beat.wxml-->
+<view>
+  <audio src="http://litten.me/weapp/beats/strong.mp3" action="{{strongAction}}"></audio>
+  <audio src="http://litten.me/weapp/beats/week.mp3" action="{{weekAction}}"></audio>
+</view>
+<view class='show_beat'>
+  <view class='beat_box row'>
+    <view class='beat_bg' style='background:#e8e8e8 url(../../images/beat_bg.png) no-repeat center center;background-size: 100%;'>
+      <view class='beat_val row'>
+        <view class='val_left'>
+          <image src='../../images/sound_logo.png'></image>
+          <text>= {{rhytm}}</text>
+        </view>
+        <view class='val_right'>
+          {{array[index]}}
+        </view>
+      </view>
+      <view class='beat_part'>
+        <view class='beat_part_item'>
+          <view class='h{{index}}' style='height:120rpx;'>ha</view>
+          <view class='h{{index}}'>ha</view>
+          <view wx:if="{{index==1||index==3||index==4}}" class='h{{index}}'>ha</view>
+          <view wx:if="{{index==2||index==4}}" class='h{{index}}'>ha</view>
+          <view wx:if="{{index==2||index==4}}" class='h{{index}}'>ha</view>
+          <view wx:if="{{index==4}}" class='h{{index}}'>ha</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='choose_beat'>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        <view>{{array[index]}}</view>
+        <image src='../../images/down_arrow.png'></image>
+        <!-- 当前选择：{{array[index]}} -->
+      </view>
+    </picker>
+  </view>
+  <view class='regulator'>
+    <view class='regulator_unit'>
+      <view class='add' bindtap='add'>
+        <image src='../../images/beat_add.png'></image>
+      </view>
+      <view class='unit_name'>RHYTHM</view>
+      <view class='reduce' bindtap='reduce'>
+        <image src='../../images/beat_reduce.png'></image>
+      </view>
+    </view>
+
+    <view class='dial_plate'>
+      <image src='../../images/plate.png' class='plate'></image>
+      <image src='../../images/knob.png' class='knob'></image>
+      <image src='../../images/play_bg.png' class='play' bindtap="startHandle"></image>
+      <image src='../../images/stop_bg.png' hidden='{{!play}}' class='play' bindtap="startHandle"></image>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='index_box'>
+    <view class='index_item' bindtap='beats'>
+      <image src='../../images/beat_entrance.png'></image>
+      <view class='index_item_name'>节拍器</view>
+    </view>
+    <view class='index_item' bindtap='canvas'>
+      <image src='../../images/guitar_entrance.png'></image>
+      <view class='index_item_name'>吉他调音器</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/canvas/canvas"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "远航音乐",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": false
+  }
+}

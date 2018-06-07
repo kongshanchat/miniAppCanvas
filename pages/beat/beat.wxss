@@ -1,0 +1,166 @@
+/* pages/beat/beat.wxss */
+
+.show_beat{
+  padding: 60rpx;
+  width: 630rpx;
+  padding-bottom: 0
+}
+
+.beat_box{
+  box-shadow: 0 0 0 1rpx #5a5a5a;
+  height: 300rpx;
+  border-radius: 4rpx;
+}
+
+.beat_bg{
+  width: 588rpx;
+  margin: 20rpx auto;
+  border: 1rpx solid #adadad;
+  border-radius: 4rpx;
+}
+
+.val_left image{
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: bottom;
+}
+
+.beat_val{
+  justify-content: space-between;
+  padding: 20rpx;
+}
+
+.beat_part{
+  height: 140rpx;
+}
+
+.beat_part_item{
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height:140rpx;
+  align-items: flex-end
+}
+
+.beat_part_item .h0{
+  flex-basis: 40%;
+  background: black;
+  text-align: center
+}
+
+.h1,.h3{
+   flex-basis: 30%;
+  background: black;
+  text-align: center
+}
+
+.h2{
+  flex-basis: 20%;
+  background: black;
+  text-align: center
+}
+
+.h4{
+  flex-basis: 12%;
+  background: black;
+  text-align: center
+}
+
+.choose_beat{
+  position: relative;
+  height: 56rpx;
+  line-height: 56rpx;
+  margin: 40rpx auto;
+  border: 1rpx solid #adadad;
+  border-radius: 4rpx;
+  width: 200rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #5a5a5a
+}
+
+.choose_beat image{
+  height: 34rpx;
+  width: 34rpx;
+  position: absolute;
+  top: 12rpx;
+  right: 6rpx;
+
+}
+
+.regulator{
+  /* padding: 60rpx; */
+}
+
+.regulator_unit{
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+
+.unit_name{
+  position: absolute;
+  margin-left: -80rpx;
+  left: 50%;
+  color: #5a5a5a;
+  font-size: 32rpx;
+}
+
+.regulator_unit image{
+width: 50rpx;
+height: 50rpx;
+vertical-align: bottom;
+margin-bottom: 15rpx;
+}
+
+.add{
+  float: left;
+}
+
+.add,.reduce{
+  background: #e8e8e8;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  line-height: 80rpx;
+  text-align: center
+}
+
+.reduce{
+  float: right;
+}
+
+.dial_plate{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  height: 600rpx;
+}
+
+.dial_plate image{
+  vertical-align: bottom;
+  position: absolute;
+}
+
+.plate{
+  top: 0;
+  width: 514rpx;
+  height: 514rpx;
+}
+
+.knob{
+  top: 49rpx;
+  width: 416rpx;
+  height: 416rpx;
+}
+
+.play{
+  top: 148rpx;
+  width: 218rpx;
+  height: 218rpx;
+ 
+}

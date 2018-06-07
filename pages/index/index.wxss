@@ -1,0 +1,35 @@
+/**index.wxss**/
+.container {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ height: 1000rpx;
+} 
+.index_box{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.index_item image{
+  width: 100rpx;
+  height: 100rpx;
+  vertical-align: bottom;
+}
+.index_item{
+  text-align: center;
+  
+}
+.index_item:nth-of-type(1){
+  margin-right:50rpx; 
+}
+.index_item:nth-of-type(2){
+  margin-left:50rpx; 
+}
+
+.index_item_name{
+  color: #5a5a5a;
+  font-size: 32rpx;
+  margin-top: 20rpx;
+}
